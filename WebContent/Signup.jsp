@@ -3,14 +3,38 @@
 		<title>Sign-up</title>
 	</head>
 	<body>
-		<form>
-			Name: <input type="text" name="name"><br>
-			Affilitation:<select>
+		<h1>
+			<a href="index.jsp">CSE 135 Shindig</a><br />
+		</h1>
+		<form action="Signup.jsp">
+			<button>Signup</button>
+		</form>
+		<form action="login.jsp">
+			<button>Login</button>
+		</form>
+		<form action="categories.jsp">
+			<button>Categories</button>
+		</form>
+		<form action="products.jsp">
+			<button>Products</button>
+		</form>
+		<form action="productsBrowsing.jsp">
+			<button>Products Browsing</button>
+		</form>
+		<form action="productOrder.jsp">
+			<button>Product Order</button>
+		</form>
+		<form action="buy.jsp">
+			<button>Buy Shopping Cart</button>
+		</form>
+		<form action="newUser.jsp" method="POST">
+			Name: <input type="text" name="name"><br />
+			Affilitation:<select name="user_type">
 				<option value="owner">Owner</option>
 				<option value="customer">Customer</option>
 			</select><br>
-			Age: <input type="text" name="age"><br>
-			State: <select>
+			Age: <input type="text" name="age"><br />
+			State: <select name="state">
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
@@ -62,6 +86,7 @@
 				<option value="WI">Wisconsin</option>
 				<option value="WY">Wyoming</option>
 			</select>
+			<input type="submit" value = "Submit"/>
 		</form>
 	</body>
 </html>
